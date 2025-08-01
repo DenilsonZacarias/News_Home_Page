@@ -1,0 +1,353 @@
+/* ===== RESET GERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== BASE (MOBILE FIRST) ===== */
+
+.mainContainer {
+  width: 100%;
+  background-color: aqua;
+}
+
+.containerItems {
+  width: 100%;
+  background-color: yellow;
+}
+
+.moreInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo,
+.mobileSubMenu {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: black;*/
+}
+
+.logoImage,
+.mobileSubMenuImage {
+  width: 100%;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  background-position: center;
+}
+
+.logoImage {
+  background-image: url(/news-homepage-main/assets/images/logo.svg);
+}
+
+.mobileSubMenuImage {
+  background-image: url(/news-homepage-main/assets/images/icon-menu.svg);
+}
+
+.bigScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(3, 77, 73);
+}
+
+.bigScreenInnerContainerAndImage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bigScreenImage {
+  width: 100%;
+  height: fit-content;
+}
+
+.imagem {
+  background-image: url(assets/images/image-web-3-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 320px;
+}
+
+.HeaderAndTextAndButton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.innerContainerHeader,
+.innerContainerTextAndButton {
+  padding: 0.4rem;
+}
+
+.innerContainerTextAndButton {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.innerContainerHeader {
+  width: 75%;
+  padding-bottom: 0;
+}
+
+.bigScreenText {
+  font-size: 15px;
+}
+
+.readMoreBtn {
+  width: fit-content;
+}
+
+.submitBtn {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+
+.bigScreenBlueSubMenu {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1rem;
+  color: white;
+  margin-top: 1.3rem;
+}
+
+.newHeader {
+  color: hsl(35, 77%, 62%);
+}
+
+.title h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: hsl(233, 8%, 79%);
+}
+
+.item {
+  padding: 2.2em 2%; /*espacamento interno vertical e horizontal*/
+  border-bottom: 2px solid hsl(236, 13%, 42%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /*padding-top: 1rem;*/
+  /*padding-bottom: 0;*/
+}
+
+.text {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.7rem;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(119, 0, 255);
+}
+
+.topic1,
+.topic2,
+.topic3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.sideImage1,
+.sideImage3 {
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+.sideImage1 {
+  background-image: url(assets/images/image-retro-pcs.jpg);
+}
+
+.sideImage2 {
+  background-image: url(assets/images/image-top-laptops.jpg);
+  width: 32%;
+}
+
+.sideImage3 {
+  background-image: url(assets/images/image-gaming-growth.jpg);
+}
+
+.enumerator {
+  color: hsl(5, 85%, 63%);
+  font-size: 1.5rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: aqua;
+  gap: 0.5rem;
+}
+
+.title_subContainer {
+  color: hsl(240, 100%, 5%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.text_subContainer {
+  color: hsl(233, 8%, 79%);
+  font-size: 1rem;
+}
+
+/* ===== DESKTOP (1440px+) ===== */
+
+@media (min-width: 1440px) {
+  .moreInfo {
+    padding: 2rem;
+  }
+
+  .logo,
+  .mobileSubMenu {
+    width: 8%;
+  }
+
+  .logoImage,
+  .mobileSubMenuImage {
+    width: 100%;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .bigScreen {
+    flex-direction: row;
+    gap: 2rem;
+    background-color: aqua;
+    align-items: stretch;
+  }
+
+  .bigScreenInnerContainerAndImage {
+    width: 70%;
+  }
+
+  .imagem {
+    background-image: url(assets/images/image-web-3-desktop.jpg);
+    height: 380px;
+  }
+
+  .HeaderAndTextAndButton {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .innerContainerHeader {
+    width: 37%;
+    background-color: aqua;
+    font-weight: 800;
+    font-size: 2.1rem;
+  }
+
+  .innerContainerTextAndButton {
+    width: 53%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bigScreenText {
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 90%;
+    padding-left: 1rem;
+    line-height: 2rem;
+    color: hsl(233, 8%, 79%);
+  }
+
+  .readMoreBtn {
+    height: 30%;
+    width: 47%;
+  }
+
+  .submitBtn {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .bigScreenBlueSubMenu {
+    width: 30%;
+    padding: 2rem;
+    height: auto;
+    align-self: stretch;
+    margin-top: 0;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .subContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .topic1,
+  .topic2,
+  .topic3 {
+    width: 30%;
+  }
+
+  .enumerator {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .title_subContainer {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .text_subContainer {
+    font-size: 1.4rem;
+  }
+
+  .sideImage1,
+  .sideImage2,
+  .sideImage3 {
+    height: 150px;
+  }
+}
