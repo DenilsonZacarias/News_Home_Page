@@ -16,12 +16,12 @@ html {
 
 .mainContainer {
   width: 100%;
-  background-color: aqua;
+  /*background-color: aqua;*/
 }
 
 .containerItems {
   width: 100%;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .moreInfo {
@@ -37,7 +37,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background-color: black;*/
+  /**background-color: aqua;*/
 }
 
 .logoImage,
@@ -50,11 +50,11 @@ html {
 }
 
 .logoImage {
-  background-image: url(/news-homepage-main/assets/images/logo.svg);
+  background-image: url(assets/images/logo.svg);
 }
 
 .mobileSubMenuImage {
-  background-image: url(/news-homepage-main/assets/images/icon-menu.svg);
+  background-image: url(assets/images/icon-menu.svg);
 }
 
 .bigScreen {
@@ -62,7 +62,7 @@ html {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  background-color: rgb(3, 77, 73);
+  /*background-color: rgb(3, 77, 73);*/
 }
 
 .bigScreenInnerContainerAndImage {
@@ -171,23 +171,29 @@ html {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  background-color: rgb(119, 0, 255);
+  /*background-color: rgb(119, 0, 255);*/
 }
 
 .topic1,
 .topic2,
 .topic3 {
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
+  align-items: flex-start;
   gap: 1rem;
+  /*background-color: aqua;*/
 }
 
 .sideImage1,
+.sideImage2,
 .sideImage3 {
-  width: 40%;
+  width: 100px;
+  height: 150px;
   background-size: cover;
   background-position: center;
-  background-color: black;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
 }
 
 .sideImage1 {
@@ -196,7 +202,6 @@ html {
 
 .sideImage2 {
   background-image: url(assets/images/image-top-laptops.jpg);
-  width: 32%;
 }
 
 .sideImage3 {
@@ -213,7 +218,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   padding: 0.5rem;
-  background-color: aqua;
+  /*background-color: aqua;*/
   gap: 0.5rem;
 }
 
@@ -226,6 +231,154 @@ html {
 .text_subContainer {
   color: hsl(233, 8%, 79%);
   font-size: 1rem;
+}
+
+/*===== TABLET (768px+) =====*/
+
+@media (min-width: 768px) {
+  .moreInfo {
+    padding: 1rem;
+  }
+
+  .logo,
+  .mobileSubMenu {
+    width: 10%;
+  }
+
+  .logoImage,
+  .mobileSubMenuImage {
+    width: 100%;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .bigScreen {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    /*background-color: aqua;*/
+  }
+
+  .bigScreenInnerContainerAndImage {
+    width: 100%;
+  }
+
+  .imagem {
+    height: 350px;
+  }
+
+  .HeaderAndTextAndButton {
+    flex-direction: column;
+  }
+
+  .innerContainerHeader {
+    width: 80%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    /*background-color: aqua;*/
+  }
+
+  .innerContainerTextAndButton {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bigScreenText {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: auto;
+    padding-left: 0.5rem;
+    line-height: 1.8rem;
+    color: hsl(233, 8%, 79%);
+  }
+
+  .readMoreBtn {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .submitBtn {
+    width: auto;
+    height: auto;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .newHeader {
+    margin-left: 1rem;
+  }
+
+  .bigScreenBlueSubMenu {
+    width: auto;
+    padding: 1.5rem;
+    height: fit-content;
+    align-self: stretch;
+    margin-top: -1rem; /* Adjusted for better alignment */
+  }
+
+  .topic1,
+  .topic2,
+  .topic3 {
+    width: 100%;
+    gap: 0.5rem;
+    height: 12rem;
+    background-color: aqua;
+  }
+
+  .sideImage1,
+  .sideImage2,
+  .sideImage3 {
+    width: 130px;
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Adjusted for better visibility */
+  }
+
+  .sideImage1 {
+    background-image: url(assets/images/image-retro-pcs.jpg);
+  }
+
+  .sideImage2 {
+    background-image: url(assets/images/image-top-laptops.jpg);
+  }
+
+  .sideImage3 {
+    background-image: url(assets/images/image-gaming-growth.jpg);
+  }
+
+  .details {
+    justify-content: space-between;
+    padding: 2rem 0 2rem 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .enumerator {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .title_subContainer {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .text_subContainer {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .subContainer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
 
 /* ===== DESKTOP (1440px+) ===== */
@@ -274,22 +427,22 @@ html {
     width: 37%;
     background-color: aqua;
     font-weight: 800;
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .innerContainerTextAndButton {
     width: 53%;
-    background-color: aqua;
+    background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 1rem;
   }
 
   .bigScreenText {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    width: 90%;
-    padding-left: 1rem;
+    width: 95%;
     line-height: 2rem;
     color: hsl(233, 8%, 79%);
   }
@@ -322,13 +475,26 @@ html {
   .subContainer {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 2.9rem;
+    background-color: aqua;
+    height: fit-content;
   }
 
   .topic1,
   .topic2,
   .topic3 {
-    width: 30%;
+    display: flex;
+    gap: 0.3rem;
+    /*width: 30%;*/
+    align-items: center;
+    background-color: khaki;
+  }
+
+  .details {
+    height: 225px; /* ou o mesmo valor de sideImage */
+    padding: 0 1rem 1rem 0.5rem;
+    justify-content: space-between;
+    overflow: hidden; /* opcional, se quiser evitar que o conteúdo ultrapasse */
   }
 
   .enumerator {
@@ -342,12 +508,14 @@ html {
   }
 
   .text_subContainer {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
   }
 
   .sideImage1,
   .sideImage2,
   .sideImage3 {
-    height: 150px;
+    height: 225px;
+    width: 170px;
   }
 }
