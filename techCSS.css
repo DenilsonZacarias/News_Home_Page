@@ -109,6 +109,8 @@ html {
 
 .bigScreenText {
   font-size: 15px;
+  font-weight: 400;
+  color: hsl(233, 8%, 79%);
 }
 
 .readMoreBtn {
@@ -287,8 +289,8 @@ html {
   }
 
   .bigScreenText {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 400;
     width: auto;
     padding-left: 0.5rem;
     line-height: 1.8rem;
@@ -326,7 +328,7 @@ html {
     width: 100%;
     gap: 0.5rem;
     height: 12rem;
-    background-color: aqua;
+    /*background-color: aqua;*/
   }
 
   .sideImage1,
@@ -405,7 +407,7 @@ html {
   .bigScreen {
     flex-direction: row;
     gap: 2rem;
-    background-color: aqua;
+    /*background-color: aqua;*/
     align-items: stretch;
   }
 
@@ -425,14 +427,14 @@ html {
 
   .innerContainerHeader {
     width: 37%;
-    background-color: aqua;
+    /*background-color: aqua;*/
     font-weight: 800;
     font-size: 2rem;
   }
 
   .innerContainerTextAndButton {
     width: 53%;
-    background-color: yellow;
+    /*background-color: yellow;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -476,7 +478,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2.9rem;
-    background-color: aqua;
+    /*background-color: aqua;*/
     height: fit-content;
   }
 
@@ -487,7 +489,7 @@ html {
     gap: 0.3rem;
     /*width: 30%;*/
     align-items: center;
-    background-color: khaki;
+    /*background-color: khaki;*/
   }
 
   .details {
