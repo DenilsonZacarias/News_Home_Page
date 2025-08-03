@@ -31,6 +31,61 @@ html {
   padding: 1rem;
 }
 
+/*======= Aba lateral escondida por padrao ======*/
+
+.sideMenu {
+  position: fixed;
+  top: 0;
+  right: -70%;
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.menuItem {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: left;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+/* Quando o menu esta activo */
+
+.sideMenu.active {
+  right: 0;
+}
+
+/* fundo escuro por tras da aba */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s easy-in-out;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .logo,
 .mobileSubMenu {
   width: 15%;
