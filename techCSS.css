@@ -86,6 +86,14 @@ html {
   visibility: visible;
 }
 
+@media (min-width: 768px) {
+  .sideMenu,
+  .overlay,
+  .mobileSubMenu {
+    display: none; /* Esconde o menu lateral e o overlay em telas maiores */
+  }
+}
+
 .logo,
 .mobileSubMenu {
   width: 15%;
