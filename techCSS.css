@@ -39,7 +39,7 @@ html {
   right: -70%;
   width: 70%;
   height: 100vh;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
   padding: 2rem 1rem;
   display: flex;
@@ -91,6 +91,28 @@ html {
   .overlay,
   .mobileSubMenu {
     display: none; /* Esconde o menu lateral e o overlay em telas maiores */
+  }
+}
+
+.closeMenuBtn {
+  display: none; /* Esconde o botão de fechar por padrão. So aparece no mobile */
+  width: 100%;
+  text-align: right;
+  padding: 1rem;
+  /*justify-content: flex-end;
+  align-items: center;*/
+  cursor: pointer;
+}
+
+.closeMenuBtn img {
+  width: 25px;
+  height: auto;
+  /*background-color: aqua;*/
+}
+
+@media (max-width: 768px) {
+  .closeMenuBtn {
+    display: block; /* Mostra o botão de fechar no mobile */
   }
 }
 
